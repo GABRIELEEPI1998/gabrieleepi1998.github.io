@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gabriele Epifani · Redesigns</title>
+<meta name="description" content="Gabriele Epifani, product designer. One redesign a week, built on what real users write.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* One column, like a notebook: name, why, then the list of redesigns, newest first. Single light theme on purpose. */
+:root { --paper: #F6F5F1; --ink: #141815; --muted: #4E5650; --line: #D9D7CF; --teal: #00646D;
+  --display: "Space Mono", "Courier New", monospace; --text: "IBM Plex Sans", Arial, sans-serif; --label: "IBM Plex Mono", "Courier New", monospace; color-scheme: light; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 17px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 56px 64px; }
+main { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+.kicker { font-family: var(--label); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); }
+h1 { font-family: var(--display); font-size: clamp(34px, 7vw, 52px); line-height: 1.05; letter-spacing: -.02em; margin: 0; }
+p { margin: 0; color: var(--muted); max-width: 62ch; }
+h2 { font-family: var(--label); font-weight: 500; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); border-bottom: 1px solid var(--line); padding-bottom: 6px; margin: 12px 0 0; }
+ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.item { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 18px 20px; background: #FFFFFF; border: 1px solid var(--line); border-radius: 14px; }
+.item .week { font-family: var(--label); font-size: 13px; color: var(--teal); padding-top: 3px; }
+.item h3 { font-family: var(--display); font-size: 20px; line-height: 1.25; margin: 0 0 6px; }
+.item p { font-size: 15px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 10px; font-size: 15px; }
+a { color: var(--teal); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+footer { font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+@media (max-width: 480px) { .item { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
+</style>
+</head>
+<body>
+<main>
+<span class="kicker">Gabriele Epifani · product designer</span>
+<h1>One redesign a week</h1>
+<p>I take an app I use, read what people really write about it, pick one problem and solve it from start to finish: research, flows, screens and the reason behind every choice. Each case also says what I couldn’t verify, because a redesign nobody has tested is still a hypothesis.</p>
+<h2>Redesigns</h2>
+<ul>
+<li class="item">
+<span class="week">Week 1</span>
+<div>
+<h3>Vinted, redesigned around trust</h3>
+<p>3,000 App Store reviews in six languages. Trust breaks when something goes wrong: you don’t know what’s happening, who decides, or why. Eight screens, from the listing to a real person.</p>
+<div class="links"><a href="vinted/">Try the clickable prototype</a></div>
+</div>
+</li>
+</ul>
+<footer>
+<span>Unsolicited concepts, not affiliated with the companies.</span>
+<a href="https://www.linkedin.com/in/gabriele-epifani-82a648192">LinkedIn</a>
+<a href="https://www.behance.net/gabrieleepifani1998/projects">Behance</a>
+</footer>
+</main>
+</body>
+</html>
